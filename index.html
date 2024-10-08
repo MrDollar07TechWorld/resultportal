@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Results Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .main-content {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .results-form, .results-display {
+      background-color: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .results-form {
+      width: 300px;
+    }
+
+    .results-form h2 {
+      margin-top: 0;
+    }
+
+    .results-form input[type="text"],
+    .results-form select,
+    .results-form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .results-form input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .results-display {
+      width: 100%;
+      flex-grow: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .results-display h2 {
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    th[colspan="2"] {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Student Results Portal</h1>
+</div>
+
+<div class="main-content">
+  <div class="results-form">
+    <h2>Check Results</h2>
+    <form id="resultsForm">
+      <input type="text" id="startPin" placeholder="Enter Start PIN No (e.g., 22029-CM-061)" required>
+      <input type="text" id="endPin" placeholder="Enter End PIN No (e.g., 22029-CM-100)" required>
+      <select id="semester" required>
+        <option value="">Select Semester</option>
+        <option value="1">Semester 1</option>
+        <option value="3">Semester 3</option>
+        <option value="4">Semester 4</option>
+        <option value="5">Semester 5</option>
+        <option value="6">Semester 6</option>
+      </select>
+      <input type="submit" value="View Results">
+    </form>
+  </div>
+
+  <div class="results-display">
+    <h2>Results</h2>
+    <div id="resultsContainer">
+      <!-- Results will be displayed here -->
+    </div>
+  </div>
+</div>
+<script src="src.js"></script>
+<script src="srcx.js"></script>
+<script src="srcy.js"></script>
+<script src="srcz.js"></script>
+<script>
+  
+</script>
+
+  </body>
+  </html>
